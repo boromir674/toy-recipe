@@ -1,0 +1,14 @@
+graft src
+graft tests
+include addition.cpp
+include build.sh
+include meta.yaml
+
+include README.rst
+include LICENSE.txt
+
+
+include tox.ini
+
+
+global-exclude *.py[cod] __pycache__ *.so *.dylib

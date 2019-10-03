@@ -1,0 +1,30 @@
+package:
+  name: cpp_python_hybrid
+  version: "0.5.0"
+
+
+requirements:
+  build:
+    - git
+    - gxx_linux-64
+  host:
+    - python
+    - pip
+  run:
+    - python
+
+
+#build:
+#  number: 3
+#  script: "python -m pip install . --no-deps --ignore-installed -vv "
+
+test:
+  requires:
+    - pytest
+  commands:
+  - pip install tox
+  - tox -3 check
+
+
+about:
+  summary: This is a simple package
