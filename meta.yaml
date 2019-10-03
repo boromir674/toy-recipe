@@ -3,6 +3,15 @@ package:
   version: "0.5.0"
 
 
+#source:
+#  git_url: https://github.com/ilanschnell/bsdiff4.git
+#  git_rev: 1.1.4
+#  git_depth: 1 # (Defaults to -1/not shallow)
+
+
+source:
+  url: https://github.com/boromir674/toy-recipe/archive/v0.5.tar.gz
+
 requirements:
   build:
     - git
@@ -19,11 +28,13 @@ requirements:
 #  script: "python -m pip install . --no-deps --ignore-installed -vv "
 
 test:
+  source_files:
+    - tox.ini
   requires:
     - pytest
   commands:
   - pip install tox
-  - tox -3 check
+  - addition 2 4
 
 
 about:

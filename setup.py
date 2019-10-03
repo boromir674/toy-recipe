@@ -48,11 +48,11 @@ setup_kwargs = dict(
     #     '': ['*.txt', '*.rst'],
     #     'package_name.file_name': ['data/*.txt', 'data/model.pickle'],
     # },
-    # entry_points={
-    #     'console_scripts': [
-    #         'add-two = cpp_python_hybrid.addition:main',
-    #     ]
-    # },
+    entry_points={
+        'console_scripts': [
+            'add-two = cpp_python_hybrid.addition:main',
+        ]
+    },
     # extras_require={},
 )
 
