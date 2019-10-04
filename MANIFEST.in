@@ -10,5 +10,6 @@ include LICENSE.txt
 include run_test.sh
 include tox.ini
 
+include tests/*
 
 global-exclude *.py[cod] __pycache__ *.so *.dylib
