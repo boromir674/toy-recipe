@@ -8,7 +8,7 @@ ADDITION_LIB = os.environ['ADDITION_LIB']
 
 
 def add_two_numbers(a, b):
-    o = subprocess.Popen([os.path.join(where_am_i, '../../', ADDITION_LIB), a, b], stdout=subprocess.PIPE, stderr=subprocess.PIPE).communicate()
+    o = subprocess.Popen([os.path.join(where_am_i, '../../', ADDITION_LIB), str(a), str(b)], stdout=subprocess.PIPE, stderr=subprocess.PIPE).communicate()
     return int(o[0].decode('utf-8'))
 
 

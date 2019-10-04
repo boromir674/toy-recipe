@@ -50,7 +50,7 @@ setup_kwargs = dict(
     # },
     entry_points={
         'console_scripts': [
-            'add-two = cpp_python_hybrid.addition:main',
+            'add-two = addition_package.addition:main',
         ]
     },
     # extras_require={},
