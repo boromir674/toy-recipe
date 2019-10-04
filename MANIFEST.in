@@ -7,7 +7,7 @@ include meta.yaml
 include README.rst
 include LICENSE.txt
 
-
+include run_test.sh
 include tox.ini
 
 
