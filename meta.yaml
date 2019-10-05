@@ -16,11 +16,23 @@ requirements:
   build:
     - git
     - gxx_linux-64
+    - make
+    - cmake
+    - libboost-dev
+#    - build-essential
+#    - libboost-all-dev
+#    - gfortran
+#    - libblas-dev
+#    - liblapack-dev
   host:
     - python
     - pip
+    - protobuf
+    - tqdm
   run:
     - python
+    - protobuf
+    - tqdm
 
 build:
   entry_points:
